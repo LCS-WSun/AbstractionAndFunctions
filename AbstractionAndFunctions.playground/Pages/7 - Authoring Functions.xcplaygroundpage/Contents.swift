@@ -71,7 +71,16 @@ func areaOfTriangle(base: Double, height: Double) -> Double {
     
 let someAreaOfTriangle = areaOfTriangle(base: 2, height: 5 )
     
+
+///Find perimiter of a parallelogram
+
+func perimiterOfParellelogram(base: Double, sideLength: Double) -> Double {
+    return 2 * (base * sideLength)
+}
     
+//Invoke the functoin to find the perimiter of a parallelogram
+
+let somePerimiterOfParellelogram = perimiterOfParellelogram(base: 5, sideLength: 2)
 /*:
  [Previous: Writing Documentation](@previous) | Page 7
  */

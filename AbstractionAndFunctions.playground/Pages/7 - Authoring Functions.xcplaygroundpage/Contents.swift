@@ -33,7 +33,7 @@ func areaOfParallelogram(base: Double, height: Double) -> Double {
 }
 
 //Invoke the function to find the area of a rectangle
-let someArea = areaOfParallelogram(base: 2, height: 5)
+let someAreaOfParallelogram = areaOfParallelogram(base: 2, height: 5)
 
 
 ///Find the volume of a cylinder
@@ -42,7 +42,16 @@ func volumeOfCylinder(radius: Double, height: Double) -> Double {
     return Double.pi * pow(radius, 2.0) * height
 }
 //Invoke the function to find the area of a rectangle
-let someArea = volumeOfCylinder(radius: 2, height: 5)
+let someAreaOfCylinder = volumeOfCylinder(radius: 2, height: 5)
+
+
+///Find the volume of a cone
+
+func volumeOfCone(radius: Double, height: Double) -> Double {
+    return 1 / 3  * Double.pi * pow(radius, 2.0) * height
+}
+//Invoke the funtion to find the area of a cone
+    let someVolumeOfCone = volumeOfCone(radius: 2, height: 5)
 /*:
  [Previous: Writing Documentation](@previous) | Page 7
  */

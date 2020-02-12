@@ -27,8 +27,15 @@ import Foundation
  */
 // Begin your work here...
 
+///Finds the area of a parallelogram
+func areaOfParallelogram(base: Double, height: Double) -> Double {
+    return base * height
+}
 
+//Invoke the function to find the area of a rectangle
+let someArea = areaOfParallelogram(base: 2, height: 5)
 
 /*:
  [Previous: Writing Documentation](@previous) | Page 7
  */
+

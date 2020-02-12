@@ -60,6 +60,18 @@ func surfaceAreaOfSphere(radius: Double) -> Double {
 }
 //Invoke the funtion to find the surface area of a sphere
 let someSurfaceAreaOfSphere = surfaceAreaOfSphere(radius: 2)
+
+
+///Find the area of a triangle
+
+func areaOfTriangle(base: Double, height: Double) -> Double {
+    return 1 / 2 * base * height
+}
+//Invoke the function to find the area of a triangle
+    
+let someAreaOfTriangle = areaOfTriangle(base: 2, height: 5 )
+    
+    
 /*:
  [Previous: Writing Documentation](@previous) | Page 7
  */

@@ -52,6 +52,14 @@ func volumeOfCone(radius: Double, height: Double) -> Double {
 }
 //Invoke the funtion to find the area of a cone
     let someVolumeOfCone = volumeOfCone(radius: 2, height: 5)
+
+///Find the surface area of a sphere
+
+func surfaceAreaOfSphere(radius: Double) -> Double {
+    return 4 * Double.pi * pow(radius, 2.0)
+}
+//Invoke the funtion to find the surface area of a sphere
+let someSurfaceAreaOfSphere = surfaceAreaOfSphere(radius: 2)
 /*:
  [Previous: Writing Documentation](@previous) | Page 7
  */

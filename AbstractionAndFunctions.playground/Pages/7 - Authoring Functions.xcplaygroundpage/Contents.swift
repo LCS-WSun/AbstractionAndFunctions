@@ -84,30 +84,28 @@ let somePerimiterOfParellelogram = perimiterOfParellelogram(base: 5, sideLength:
 
 
 ///Find the perimter of a triangle
-func perimeterOfTriangle(base: Double, hypotneuseb: Double, hypotneusec: Double) -> Double {
-    return base + hypotneuseb + hypotneusec
+func perimeterOfTriangle(sideLengthA: Double, sideLengthB: Double, sideLengthC: Double) -> Double {
+    return sideLengthA + sideLengthB + sideLengthC
 }
     
     
     //Invoke the function with a value to find the perimeter of a triangle
     
-    let somePeterimeterOfTriangle = peterimeterOfTriangle(base: 2, hypotneusec: 3 hypotneuseb: 4)
+let somePerimeterOfTriangle = perimeterOfTriangle(sideLengthA: 2, sideLengthB: 3, sideLengthC: 4)
     
     
     ///Find the perimeter of a circle
     
-func perimeterOfCircle(radius: Double) -> Double) -> Double {
+func perimeterOfCircle(radius: Double) -> Double {
     return 2 * Double.pi * radius
 }
     
 
-    
 //Invoke the function with a value to find the perimeter of a circle
     let somePerimeterOfCircle = perimeterOfCircle(radius: 4)
 
 ///Find the surface area of a rectangular prism
 
-//A = 2(wh + lw + lh)
 
 func surfaceAreaOfARectangularPrism(width: Double, height: Double, length: Double) -> Double {
     return 2 * (width * height + length * width + length * height)

@@ -28,17 +28,32 @@ import Foundation
 // Begin your work here...
 
 ///Finds the area of a parallelogram
-func areaOfParallelogram(base: Double, height: Double) -> Double {
+func areaOfParallelogram(base: Double, height: Double) -> Double? {
+    
+    guard base > 0, height > 0 else {
+    return nil
+    }
+    
+    
     return base * height
 }
+
 
 //Invoke the function to find the area of a rectangle
 let someAreaOfParallelogram = areaOfParallelogram(base: 2, height: 5)
 
 
+
+
+
 ///Find the volume of a cylinder
 
-func volumeOfCylinder(radius: Double, height: Double) -> Double {
+func volumeOfCylinder(radius: Double, height: Double) -> Double? {
+    
+    guard radius > 0, height > 0 else {
+      return nil
+    
+    }
     return Double.pi * pow(radius, 2.0) * height
 }
 //Invoke the function to find the area of a rectangle
@@ -47,15 +62,30 @@ let someAreaOfCylinder = volumeOfCylinder(radius: 2, height: 5)
 
 ///Find the volume of a cone
 
-func volumeOfCone(radius: Double, height: Double) -> Double {
+func volumeOfCone(radius: Double, height: Double) -> Double? {
+    
+    guard radius > 0, height > 0 else {
+        return nil
+    }
+    
+    
+    
     return 1 / 3  * Double.pi * pow(radius, 2.0) * height
+    
+    
+
 }
 //Invoke the funtion to find the area of a cone
     let someVolumeOfCone = volumeOfCone(radius: 2, height: 5)
 
 ///Find the surface area of a sphere
 
-func surfaceAreaOfSphere(radius: Double) -> Double {
+func surfaceAreaOfSphere(radius: Double) -> Double? {
+    
+    guard radius > 0 else {
+        return nil
+    }
+    
     return 4 * Double.pi * pow(radius, 2.0)
 }
 //Invoke the funtion to find the surface area of a sphere
@@ -64,7 +94,13 @@ let someSurfaceAreaOfSphere = surfaceAreaOfSphere(radius: 2)
 
 ///Find the area of a triangle
 
-func areaOfTriangle(base: Double, height: Double) -> Double {
+func areaOfTriangle(base: Double, height: Double) -> Double? {
+    
+    guard base > 0, height > 0 else {
+        return nil
+    }
+    
+    
     return 1 / 2 * base * height
 }
 //Invoke the function to find the area of a triangle
@@ -74,7 +110,11 @@ let someAreaOfTriangle = areaOfTriangle(base: 2, height: 5 )
 
 ///Find perimiter of a parallelogram
 
-func perimiterOfParellelogram(base: Double, sideLength: Double) -> Double {
+func perimiterOfParellelogram(base: Double, sideLength: Double) -> Double? {
+    
+    guard base > 0, sideLength > 0 else {
+        return nil
+    }
     return 2 * (base * sideLength)
 }
     
@@ -84,7 +124,15 @@ let somePerimiterOfParellelogram = perimiterOfParellelogram(base: 5, sideLength:
 
 
 ///Find the perimter of a triangle
-func perimeterOfTriangle(sideLengthA: Double, sideLengthB: Double, sideLengthC: Double) -> Double {
+func perimeterOfTriangle(sideLengthA: Double, sideLengthB: Double, sideLengthC: Double) -> Double? {
+    
+    guard sideLengthA > 0, sideLengthB > 0, sideLengthC > 0 else  {
+        return nil 
+    }
+    
+    
+    
+    
     return sideLengthA + sideLengthB + sideLengthC
 }
     

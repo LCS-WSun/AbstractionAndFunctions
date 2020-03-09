@@ -38,7 +38,6 @@ func areaOfParallelogram(base: Double, height: Double) -> Double? {
     
 }
 
-
 //Invoke the function to find the area of a rectangle
 let someAreaOfParallelogram = areaOfParallelogram(base: 2, height: 5)
 
@@ -55,6 +54,9 @@ areaOfParallelogram(base: -2, height: 5)
 //Test Case #4 (-value of height) = nil
 areaOfParallelogram(base: 2, height: -5)
 
+//Report the results
+print("The area of that parallelogram was \(result) square units")
+
 
 ///Find the volume of a cylinder
 
@@ -66,8 +68,9 @@ func volumeOfCylinder(radius: Double, height: Double) -> Double? {
     }
     return Double.pi * pow(radius, 2.0) * height
 }
-//Invoke the function to find the area of a rectangle
+//Invoke the function to find the area of a cylinder
 let someAreaOfCylinder = volumeOfCylinder(radius: 2, height: 5)
+
 
 
 ///Find the volume of a cone
@@ -87,6 +90,7 @@ func volumeOfCone(radius: Double, height: Double) -> Double? {
 }
 //Invoke the funtion to find the area of a cone
     let someVolumeOfCone = volumeOfCone(radius: 2, height: 5)
+
 
 ///Find the surface area of a sphere
 
@@ -128,7 +132,7 @@ func perimiterOfParellelogram(base: Double, sideLength: Double) -> Double? {
     return 2 * (base * sideLength)
 }
     
-//Invoke the functoin to find the perimiter of a parallelogram
+//Invoke the function to find the perimiter of a parallelogram
 
 let somePerimiterOfParellelogram = perimiterOfParellelogram(base: 5, sideLength: 2)
 

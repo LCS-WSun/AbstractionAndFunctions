@@ -34,8 +34,8 @@ func areaOfParallelogram(base: Double, height: Double) -> Double? {
     return nil
     }
     
-    
     return base * height
+    
 }
 
 
@@ -43,7 +43,17 @@ func areaOfParallelogram(base: Double, height: Double) -> Double? {
 let someAreaOfParallelogram = areaOfParallelogram(base: 2, height: 5)
 
 
+//Test case #1 base = 10 (making sure calculation is correct)
+ let result = areaOfParallelogram(base: 2, height: 5 )
 
+//Test case #2 (decimal value = 12.5
+areaOfParallelogram(base: 2.5, height: 5)
+
+//Test Case #3 (negative values) = nil
+areaOfParallelogram(base: -2, height: 5)
+
+//Test Case #4 (-value of height) = nil
+areaOfParallelogram(base: 2, height: -5)
 
 
 ///Find the volume of a cylinder
